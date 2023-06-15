@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../../partials/head %>
+</head>
+
+<body class="container">
+    <% include ../../partials/header %>
+
+        <main>
+            <div class="container">
+                <h1>Register Account</h1>
+
+                <form action="/api/users/register" method="POST">
+                    <div class="form-group">
+                        <label for="username" >Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Email</label>
+                        <input type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Password</label>
+                        <input type="text" class="form-control" name="password" placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+
+            <footer>
+                <% include ../../partials/footer %>
+            </footer>
+</body>
+
+</html>
